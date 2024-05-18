@@ -16,7 +16,6 @@ import {useNavigation,useFocusEffect } from '@react-navigation/native';
 
 function ScreenLocation() {
   const savedLocations = useSelector(selectSavedLocations);
-console.log('savedLocations---',savedLocations)
 
   const dispatch = useDispatch();
   const navigation = useNavigation();

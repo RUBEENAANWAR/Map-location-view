@@ -34,10 +34,6 @@ export default function ScreenMap() {
   }])
 
   const [marker, setMarker] = useState([]);
-  // const [selectedLocation, setSelectedLocation] = useState(initialSelectedLocation || {
-  //   latitude: 10.6675076,
-  //   longitude: 75.9899908994804,
-  // });
   const [selectedLocation, setSelectedLocation] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [lat, setLat] = useState(null);
@@ -108,8 +104,6 @@ export default function ScreenMap() {
         <MapView
           style={styles.map}
           initialRegion={{
-            // latitude: 10.667565249999999,
-            // longitude: 75.9899908994804,
              latitude: selectedLocation ? selectedLocation.latitude : 10.6675076,
           longitude: selectedLocation ? selectedLocation.longitude : 75.9899908994804,
             latitudeDelta: 0.05,
